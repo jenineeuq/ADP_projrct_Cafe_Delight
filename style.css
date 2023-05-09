@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-style:normal;
+    
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    min-height: 79vh;
+    background: url('coffeebg3.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    
+}
+.home {
+        color: #fff;
+        padding: 200px;
+        min-height: 120vh;
+        margin-left:0px;
+        font-size: 200px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+.content h3{
+    font-size: 70px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    margin: -70px;
+    position: fixed;
+    left: 70px;
+    right:20px;
+    display: flex;
+    
+}
+.row .btn{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgb(219, 174, 124);
+    outline: none;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-left: 0px;
+    color: #7c2e2e;
+    background-color: #fff;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.row .btn:hover {
+   background-color: aliceblue;
+
+
+}
+.logo{
+    font-size: 2em;
+    color: white;
+    user-select: none;
+    margin-left: -55px;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: aliceblue;
+    font-weight: 500;
+    margin-left: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left: 0;
+
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition:transform .5s;
+
+     
+}.navigation a:hover::after{
+    transform-origin:left;
+    transform: scaleX(1);
+    transition-duration: 0.4s;
+   
+}
+
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-left: 40px;
+    color: #fff;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: rgb(207, 176, 84);
+
+
+}
